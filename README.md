@@ -18,7 +18,7 @@ The problem is that, while loading the appropriate module named `e1000e` by inte
 
 ### The fix
 
-[This guy](https://www.dell.com/community/en/conversations/precision-mobile-workstations/precision-7560-e1000e-module-error-the-nvm-checksum-is-not-valid/647f9784f4ccf8a8dea83444?commentId=647f9d61f4ccf8a8de1b1341) seems to have the same laptop and managed to solve the problem.
+[This guy](https://www.dell.com/community/en/conversations/precision-mobile-workstations/precision-7560-e1000e-module-error-the-nvm-checksum-is-not-valid/647f9784f4ccf8a8dea83444?commentId=647f9d61f4ccf8a8de1b1341) seems to have the same laptop and did not manage to solve the problem :(
 
 ## Fingerpirnt reader
 
