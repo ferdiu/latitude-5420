@@ -25,4 +25,33 @@ This discussion seems interessing: [https://superuser.com/questions/1104537/how-
 
 ### The problem
 
+Of course the driver are not available sine they are closed-source and Broadcome did not care enough to provide them for Linux.
+
 ### The fix
+
+Canonical ported them to Linux (thanks) and mimiking the way they build them for Ubuntu I can do the same for Fedora.
+
+The driver is provided already compiled in [this repo])https://git.launchpad.net/~oem-solutions-engineers/libfprint-2-tod1-broadcom/+git/libfprint-2-tod1-broadcom/).
+
+```bash
+git clone https://git.launchpad.net/~oem-solutions-engineers/libfprint-2-tod1-broadcom/+git/libfprint-2-tod1-broadcom/
+```
+everything is already compiled. Only copying the libraries in the proper directory will be needed for this to work.
+
+These drivers depends on other libraries that can be found [here](https://launchpad.net/ubuntu/+source/libfprint/1:1.90.2+tod1-0ubuntu1~20.04.10):
+
+```bash
+wget --trust-server-names "https://launchpadlibrarian.net/635195496/libfprint_1.90.2+tod1.orig.tar.xz"
+```
+
+this time we need to compile the library using `meson` and `ninja`. To avoid stupid dependencies installation you can disable the documentation installation by modifying the file `meson_options.txt` by setting to `false` the _option_ `doc`.
+After this, to compile:
+
+```bash
+mkdir builddir
+cd builddir
+meson ..
+ninja
+```
+
+during the `meson` part you may need to install some _dev dependency_. Just do it until you have everything neede.
