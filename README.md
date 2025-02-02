@@ -31,7 +31,7 @@ Of course the driver are not available sine they are closed-source and Broadcome
 
 Canonical ported them to Linux (thanks) and mimiking the way they build them for Ubuntu I can do the same for Fedora.
 
-The driver is provided already compiled in [this repo])https://git.launchpad.net/~oem-solutions-engineers/libfprint-2-tod1-broadcom/+git/libfprint-2-tod1-broadcom/).
+The driver is provided already compiled in [this repo](https://git.launchpad.net/~oem-solutions-engineers/libfprint-2-tod1-broadcom/+git/libfprint-2-tod1-broadcom/).
 
 ```bash
 git clone https://git.launchpad.net/~oem-solutions-engineers/libfprint-2-tod1-broadcom/+git/libfprint-2-tod1-broadcom/
