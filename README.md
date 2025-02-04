@@ -55,3 +55,15 @@ ninja
 ```
 
 during the `meson` part you may need to install some _dev dependency_. Just do it until you have everything neede.
+
+## Other resources
+
+### Dell Command | COnfigure (not tested yet)
+
+[This tool](https://www.dell.com/support/kbdoc/en-us/000178000/dell-command-configure) can be used to control some BIOS settings from within Linux based OSes: for example can change the battery charging threshold.
+What needs to be done here is to install the packages from the link above (`.rpm`s packages are available until version `4.11.0` at the time of writing) and then run somthing like:
+
+```bash
+sudo /opt/dell/dcc/cctk --PrimaryBattChargeCfg=Custom,50,80
+```
+
