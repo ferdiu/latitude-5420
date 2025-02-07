@@ -40,6 +40,7 @@ I created a COPR repo to install the needed driver, courtesy of ubuntu. Instruct
 What needs to be done here is to install the packages from the link above (`.rpm`s packages are available until version `4.11.0` at the time of writing) and then run somthing like:
 
 ```bash
-sudo /opt/dell/dcc/cctk --PrimaryBattChargeCfg=Custom,50,80
+sudo /opt/dell/dcc/cctk --PrimaryBattChargeCfg=Custom:50-80
 ```
 
+see [this](https://www.dell.com/support/manuals/it-it/command-configure-v4.1/dcc_cli_4.1.0/dell-command-|-configure-options?guid=guid-3bf52184-7423-4b6b-8aba-4c1c61c96770&lang=en-us) for reference.
