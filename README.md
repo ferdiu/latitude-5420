@@ -34,7 +34,7 @@ I created a COPR repo to install the needed driver, courtesy of ubuntu. Instruct
 
 ## Other resources
 
-### Dell Command | Configure (not tested yet)
+### ✅ Dell Command | Configure
 
 [This tool](https://www.dell.com/support/kbdoc/en-us/000178000/dell-command-configure) can be used to control some BIOS settings from within Linux based OSes: for example can change the battery charging threshold.
 What needs to be done here is to install the packages from the link above (`.rpm`s packages are available until version `4.11.0` at the time of writing) and then run somthing like:
