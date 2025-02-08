@@ -22,6 +22,10 @@ The problem is that, while loading the appropriate module named `e1000e` by inte
 
 This discussion seems interessing: [https://superuser.com/questions/1104537/how-to-repair-the-checksum-of-the-non-volatile-memory-nvm-of-intel-ethernet-co](https://superuser.com/questions/1104537/how-to-repair-the-checksum-of-the-non-volatile-memory-nvm-of-intel-ethernet-co)
 
+The problem can be fixed just ignoring the bad result of the checksum validation (this is the behaviour of the same drivers on Windows). The in-tree kernel module `e1000e` can be patched to ignore this problem. Of course this workaround works only if the adapter is working: if the validation failed because of a faulty hardware this won't help.
+
+To make this maintainable I am working on an akmod package for this driver [here](https://github.com/ferdiu/akmod-e1000e-no-nvm-check).
+
 ## ✅ Fingerprint reader
 
 ### The problem
