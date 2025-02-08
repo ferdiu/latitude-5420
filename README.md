@@ -22,7 +22,7 @@ The problem is that, while loading the appropriate module named `e1000e` by inte
 
 This discussion seems interessing: [https://superuser.com/questions/1104537/how-to-repair-the-checksum-of-the-non-volatile-memory-nvm-of-intel-ethernet-co](https://superuser.com/questions/1104537/how-to-repair-the-checksum-of-the-non-volatile-memory-nvm-of-intel-ethernet-co)
 
-## ✅ Fingerpirnt reader
+## ✅ Fingerprint reader
 
 ### The problem
 
